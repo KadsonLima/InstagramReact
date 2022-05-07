@@ -1,17 +1,18 @@
 import ReactDOM from 'react-dom';
-import Top from './top';
-import Content from './content';
-import Footer from './footer';
+import Header from './header.js';
+import Body from './body.js';
 
-function app(){
+function App() {
     return (
-        <body>
-            <Top/>
-            <Content/>
-            <Footer/>
-        </body>
+        <div className='body'>
+            <Header />
+            <Body />
+        </div>
     )
 }
 
 
-ReactDOM.render(app(), document.querySelector(".root"))
+
+
+
+ReactDOM.render(<App />, document.querySelector(".root"))
